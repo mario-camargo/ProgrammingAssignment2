@@ -10,7 +10,7 @@ makeCacheMatrix <- function(x = matrix()) { # el argumento de la función es una
                 s <<- NULL
         }
         get <- function() x # función que regresa a la matriz 'x'
-        setsolve <- function(inversa) s <<- inversa #función que asiga de forma global el argumento, a la matriz 's' como la inversa 
+        setsolve <- function(inversa) s <<- inversa # se asiga de forma global el argumento a la matriz 's'
         getsolve <- function() s # función que regresa la matriz inversa 's'
         list(set = set, get = get,
              setsolve = setsolve,
